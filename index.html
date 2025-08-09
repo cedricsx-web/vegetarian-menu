@@ -17,27 +17,74 @@
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  /* Swirling veggies animation styles */
+  /* Modern swirling veggies animation styles */
   .swirl-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     margin: 0.5rem auto 2rem;
+    perspective: 800px;
   }
   .swirl-container svg {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    animation: swirl 10s linear infinite;
-    transform-origin: 100px 100px; /* center of container */
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.15));
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
   }
-  .veg1 { animation-delay: 0s; top: 0; left: 80px; }
-  .veg2 { animation-delay: 3.33s; top: 80px; left: 0; }
-  .veg3 { animation-delay: 6.66s; top: 160px; left: 80px; }
-
-  @keyframes swirl {
-    from { transform: rotate(0deg) translateX(80px) rotate(0deg); }
-    to { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+  .veg1 {
+    top: 88px;
+    left: 88px;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 0s;
+  }
+  .veg2 {
+    top: 40px;
+    left: 140px;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 1.66s;
+  }
+  .veg3 {
+    top: 10px;
+    left: 80px;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 3.33s;
+  }
+  .veg4 {
+    top: 40px;
+    left: 20px;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 5s;
+  }
+  .veg5 {
+    top: 88px;
+    left: 0;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 6.66s;
+  }
+  .veg6 {
+    top: 140px;
+    left: 40px;
+    animation: swirlOrbit 10s linear infinite;
+    animation-delay: 8.33s;
+  }
+  @keyframes swirlOrbit {
+    0% {
+      transform: rotateY(0deg) translateZ(80px) scale(1);
+      opacity: 1;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.15));
+    }
+    50% {
+      transform: rotateY(180deg) translateZ(80px) scale(0.7);
+      opacity: 0.6;
+      filter: drop-shadow(0 0 2px rgba(0,0,0,0.05));
+    }
+    100% {
+      transform: rotateY(360deg) translateZ(80px) scale(1);
+      opacity: 1;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.15));
+    }
   }
 
   /* Menu styling */
@@ -91,6 +138,25 @@
     <svg class="veg3" viewBox="0 0 64 64" fill="#FF6347" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <ellipse cx="32" cy="32" rx="14" ry="20"/>
       <rect x="26" y="10" width="12" height="6" rx="3" ry="3"/>
+    </svg>
+
+    <!-- Tomato SVG -->
+    <svg class="veg4" viewBox="0 0 64 64" fill="#e34234" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="32" r="14"/>
+      <path fill="#228B22" d="M20 18 L24 10 L40 10 L44 18z"/>
+    </svg>
+
+    <!-- Peas SVG -->
+    <svg class="veg5" viewBox="0 0 64 64" fill="#6ab04c" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="22" cy="32" r="6"/>
+      <circle cx="32" cy="32" r="6"/>
+      <circle cx="42" cy="32" r="6"/>
+    </svg>
+
+    <!-- Corn SVG -->
+    <svg class="veg6" viewBox="0 0 64 64" fill="#f6e58d" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="28" y="8" width="8" height="48" rx="4" ry="4"/>
+      <path fill="#ffb142" d="M30 12 L34 12 L34 44 L30 44z"/>
     </svg>
   </div>
 
