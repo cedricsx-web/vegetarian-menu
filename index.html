@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vegetarian High-Protein Weekly Menu</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background: #f7f9fc;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  /* Swirling veggies animation styles */
+  .swirl-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0.5rem auto 2rem;
+  }
+  .swirl-container svg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: swirl 10s linear infinite;
+    transform-origin: 100px 100px; /* center of container */
+  }
+  .veg1 { animation-delay: 0s; top: 0; left: 80px; }
+  .veg2 { animation-delay: 3.33s; top: 80px; left: 0; }
+  .veg3 { animation-delay: 6.66s; top: 160px; left: 80px; }
+
+  @keyframes swirl {
+    from { transform: rotate(0deg) translateX(80px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+  }
+
+  /* Menu styling */
+  section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.25rem;
+  }
+  h3 {
+    margin-top: 1rem;
+    color: #2980b9;
+  }
+  ul {
+    margin-top: 0.25rem;
+    padding-left: 1.2rem;
+  }
+  li {
+    margin-bottom: 0.3rem;
+  }
+  @media (max-width: 400px) {
+    body {
+      padding: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Vegetarian High-Protein Weekly Menu</h1>
+
+  <div class="swirl-container" aria-label="Swirling vegetables animation" role="img" aria-live="polite" aria-atomic="true">
+    <!-- Carrot SVG -->
+    <svg class="veg1" viewBox="0 0 64 64" fill="#FFA500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 52 L40 24 L44 28 L16 56z"/>
+      <path fill="#228B22" d="M40 24 L44 28 L48 12 L44 8z"/>
+    </svg>
+
+    <!-- Broccoli SVG -->
+    <svg class="veg2" viewBox="0 0 64 64" fill="#228B22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="24" r="12"/>
+      <rect x="28" y="36" width="8" height="20"/>
+    </svg>
+
+    <!-- Bell Pepper SVG -->
+    <svg class="veg3" viewBox="0 0 64 64" fill="#FF6347" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <ellipse cx="32" cy="32" rx="14" ry="20"/>
+      <rect x="26" y="10" width="12" height="6" rx="3" ry="3"/>
+    </svg>
+  </div>
+
+  <section>
+    <h2>Day 1</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Protein shake (1.5 scoops plant protein + almond milk + banana)</li>
+      <li>Oats + chia seeds + almonds</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Quinoa (1.5 cups cooked)</li>
+      <li>Lentil curry (1.5 cups cooked lentils)</li>
+      <li>Mixed veggies</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Tofu stir-fry (150g tofu)</li>
+      <li>Brown rice (1 cup cooked)</li>
+      <li>Steamed broccoli</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 2</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Greek yogurt (200g) + mixed berries + walnuts</li>
+      <li>Protein shake (1 scoop plant protein + almond milk)</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Chickpea and spinach stew (1.5 cups cooked chickpeas)</li>
+      <li>Bulgur wheat (1.5 cups cooked)</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Tempeh sauté (150g) with bell peppers</li>
+      <li>Quinoa (1 cup cooked)</li>
+      <li>Roasted asparagus</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 3</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Protein shake (1.5 scoops plant protein + almond milk + mango)</li>
+      <li>Whole grain toast + peanut butter (2 tbsp)</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Black bean chili (1.5 cups cooked black beans)</li>
+      <li>Brown rice (1.5 cups cooked)</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Paneer tikka (150g paneer)</li>
+      <li>Couscous (1 cup cooked)</li>
+      <li>Steamed green beans</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 4</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Greek yogurt (200g) + oats + flaxseeds + almonds</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Red kidney bean salad (1.5 cups cooked kidney beans)</li>
+      <li>Quinoa (1.5 cups cooked)</li>
+      <li>Mixed greens</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Tofu and vegetable curry (150g tofu)</li>
+      <li>Brown rice (1 cup cooked)</li>
+      <li>Steamed carrots</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 5</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Protein shake (1.5 scoops plant protein + almond milk + berries)</li>
+      <li>Oats + chia seeds</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Lentil and vegetable soup (1.5 cups cooked lentils)</li>
+      <li>Whole grain bread (2 slices)</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Tempeh stir-fry (150g)</li>
+      <li>Quinoa (1 cup cooked)</li>
+      <li>Roasted zucchini</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 6</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Greek yogurt (200g) + granola + walnuts</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Chickpea curry (1.5 cups cooked chickpeas)</li>
+      <li>Brown rice (1.5 cups cooked)</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Paneer and spinach sauté (150g paneer)</li>
+      <li>Couscous (1 cup cooked)</li>
+      <li>Steamed broccoli</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Day 7</h2>
+    <h3>Breakfast</h3>
+    <ul>
+      <li>Protein shake (1.5 scoops plant protein + almond milk + banana)</li>
+      <li>Whole grain toast + almond butter (2 tbsp)</li>
+    </ul>
+    <h3>Lunch</h3>
+    <ul>
+      <li>Black bean and corn salad (1.5 cups cooked black beans)</li>
+      <li>Bulgur wheat (1.5 cups cooked)</li>
+    </ul>
+    <h3>Dinner</h3>
+    <ul>
+      <li>Tofu stir-fry (150g tofu)</li>
+      <li>Brown rice (1 cup cooked)</li>
+      <li>Mixed steamed vegetables</li>
+    </ul>
+  </section>
+</body>
+</html>
